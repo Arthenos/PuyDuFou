@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Puy du Fou"</string>
+    <string name="AddHomeTitle">" - Acceuil"</string>
+    <string name="TextButton">"Changer la TextView du dessus"</string>
+    <string name="HelloWorld">"Hello World, Home !!!"</string>
+    <string name="SecondActivity">"Second activity test"</string>
+    <string name="title_activity_sample">Détails</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
