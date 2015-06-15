@@ -12,7 +12,7 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         // Coucou
-        // Coucou 2
+        // Coucou 2 d
     }
 
     @Override
