@@ -29,7 +29,7 @@ public class Home extends AppCompatActivity
 
             _layoutHelper.<TextView>GetElement(R.id.TestText).setText("Changement -> !");
 
-            MessageQueue.Instance().AddMessage(new Object());
+            MessageQueue.Instance().AddMessage(3);
 
             Intent i = new Intent(Home.this, Sample.class);
             startActivity(i);
