@@ -26,7 +26,7 @@ public class Sample extends AppCompatActivity
         _layoutHelper.ActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        Object t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
+        Float t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
 
         if (t == null)
         {
