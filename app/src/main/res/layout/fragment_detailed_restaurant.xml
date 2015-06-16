@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.exia.puydufou.CardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <TextView android:id="@+id/restaurant_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/menu_text_size"
+                  />
+
+        <RatingBar android:id="@+id/restaurant_rating"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   android:stepSize="0.5"
+                   android:isIndicator="true"
+                />
+
+        <ImageView android:id="@+id/restaurant_preview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/restaurant_location_label"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+
+                      android:text="@string/text_location"/>
+
+            <TextView android:id="@+id/restaurant_location"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                    />
+        </LinearLayout>
+
+        <TextView android:id="@+id/restaurant_description_label"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="@dimen/description_text_size"
+                  android:text="@string/text_description"/>
+
+        <TextView android:id="@+id/restaurant_description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/description_text_size"
+                />
+
+        <Button android:id="@+id/restaurant_rateit"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="@dimen/description_text_size"
+                android:text="@string/text_rateit"
+                />
+    </LinearLayout>
+</FrameLayout>

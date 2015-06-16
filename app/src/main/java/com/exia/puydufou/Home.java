@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import com.exia.puydufou.Helper.LayoutHelper;
+import com.exia.puydufou.Helper.ViewEnum;
+import com.exia.puydufou.Messenger.MessageQueue;
 
 
 public class Home extends AppCompatActivity
@@ -31,7 +33,38 @@ public class Home extends AppCompatActivity
         @Override
         public void onClick(View v)
         {
-            Intent i = new Intent(Home.this, Show.class);
+
+            MessageQueue.Instance().AddMessage(ViewEnum.Show);
+
+            Intent i = new Intent(Home.this, CardDetail.class);
+            startActivity(i);
+
+        }
+    };
+
+    private View.OnClickListener RestaurantsMenuClick = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+
+            MessageQueue.Instance().AddMessage(ViewEnum.Restaurant);
+
+            Intent i = new Intent(Home.this, CardDetail.class);
+            startActivity(i);
+
+        }
+    };
+
+    private View.OnClickListener ShopsMenuClick = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+
+            MessageQueue.Instance().AddMessage(ViewEnum.Shop);
+
+            Intent i = new Intent(Home.this, CardDetail.class);
             startActivity(i);
 
         }
@@ -50,7 +83,9 @@ public class Home extends AppCompatActivity
         //Android match le nom de la première activité avec le nom de l'application
         _layoutHelper.ConcatTitle(R.string.title_activity_home);
         _layoutHelper.<Button>GetElement(R.id.menu_planning).setOnClickListener(PlanningMenuClick);
-        _layoutHelper.<Button>GetElement(R.id.menu_spectacle).setOnClickListener(ShowsMenuClick);
+        _layoutHelper.<Button>GetElement(R.id.menu_show).setOnClickListener(ShowsMenuClick);
+        _layoutHelper.<Button>GetElement(R.id.menu_restaurant).setOnClickListener(RestaurantsMenuClick);
+        _layoutHelper.<Button>GetElement(R.id.menu_shop).setOnClickListener(ShopsMenuClick);
 
         _layoutHelper.ApplyModifications();
 

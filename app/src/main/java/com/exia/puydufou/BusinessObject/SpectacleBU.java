@@ -4,6 +4,7 @@ package com.exia.puydufou.BusinessObject;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class SpectacleBU implements Serializable
 {
@@ -14,11 +15,10 @@ public class SpectacleBU implements Serializable
     private int duration;
     private Date date;
     private int actorsNumber;
-    private ArrayList<PerformanceBU> performances = new ArrayList<>();
+    private List<PerformanceBU> performances = new ArrayList<>();
+    private List<RateBU> rates = new ArrayList<>();
 
-
-
-    private ArrayList<RateBU> rates = new ArrayList<>();
+    public SpectacleBU() {}
 
     public SpectacleBU(int id, String name, String description, String picturePath, int duration, Date date, int actorsNumber, ArrayList<PerformanceBU> performances,ArrayList<RateBU> rates) {
         this.id = id;
@@ -89,7 +89,7 @@ public class SpectacleBU implements Serializable
         this.actorsNumber = actorsNumber;
     }
 
-    public ArrayList<PerformanceBU> getPerformances() {
+    public List<PerformanceBU> getPerformances() {
         return performances;
     }
 
@@ -97,7 +97,7 @@ public class SpectacleBU implements Serializable
         this.performances = performances;
     }
 
-    public ArrayList<RateBU> getRates() {
+    public List<RateBU> getRates() {
         return rates;
     }
 

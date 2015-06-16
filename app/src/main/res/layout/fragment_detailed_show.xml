@@ -1,13 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.exia.puydufou.DetailedShow">
+             tools:context="com.exia.puydufou.CardFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView android:id="@+id/fragment_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_description"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        <TextView android:id="@+id/show_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/menu_text_size"
+                />
+
+        <RatingBar android:id="@+id/show_rating"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   android:stepSize="0.5"
+                   android:isIndicator="true"
+                />
+
+        <ImageView android:id="@+id/show_preview"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/show_creationdate_label"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                      android:text="@string/text_creationdate"/>
+
+            <TextView android:id="@+id/show_creationdate"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/show_duration_label"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                      android:text="@string/text_duration"/>
+
+            <TextView android:id="@+id/show_duration"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                    />
+
+            <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                      android:text="@string/text_min_unit"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/show_actors_label"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                      android:text="@string/text_actors"/>
+
+            <TextView android:id="@+id/show_actors"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/description_text_size"
+                    />
+        </LinearLayout>
+
+        <TextView android:id="@+id/show_description_label"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="@dimen/description_text_size"
+                  android:text="@string/text_description"/>
+
+        <TextView android:id="@+id/show_description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/description_text_size"
+                />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/shop_addit"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="@dimen/description_text_size"
+                    android:text="@string/text_addit"
+                    />
+            <Button android:id="@+id/shop_rateit"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="@dimen/description_text_size"
+                    android:text="@string/text_rateit"
+                    />
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>

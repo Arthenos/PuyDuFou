@@ -4,6 +4,7 @@ import android.graphics.Region;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by maxim_000 on 16/06/2015.
@@ -16,7 +17,7 @@ public class ShopBU implements Serializable {
     private String name;
     private String description;
     private String location;
-    private ArrayList<RateBU> rates = new ArrayList<>();
+    private List<RateBU> rates = new ArrayList<>();
     //endregion
 
     //region Getters / Setters
@@ -52,7 +53,7 @@ public class ShopBU implements Serializable {
         this.location = location;
     }
 
-    public ArrayList<RateBU> getRates() {
+    public List<RateBU> getRates() {
         return rates;
     }
 
@@ -60,6 +61,9 @@ public class ShopBU implements Serializable {
         this.rates = rates;
     }
     //endregion
+
+
+    public ShopBU() {}
 
     public ShopBU(int id, String name, String description, String location, ArrayList<RateBU> rates) {
         this.id = id;

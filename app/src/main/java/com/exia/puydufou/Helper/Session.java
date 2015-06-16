@@ -1,6 +1,10 @@
 package com.exia.puydufou.Helper;
 
 
+import com.exia.puydufou.BusinessObject.SpectacleBU;
+
+import java.util.List;
+
 public final class Session
 {
     private Session() {}
@@ -18,6 +22,19 @@ public final class Session
         return SessionHolder.instance;
     }
 
+
+
     //FIELDS
+    private List<SpectacleBU> _planning = null;
+
+    public List<SpectacleBU> GetPlanning()
+    {
+        return _planning;
+    }
+
+    public void SetPlanning(List<SpectacleBU> _planning)
+    {
+        this._planning = _planning;
+    }
 
 }

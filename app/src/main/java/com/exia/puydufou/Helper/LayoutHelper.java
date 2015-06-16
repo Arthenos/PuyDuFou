@@ -5,8 +5,10 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuInflater;
 import android.view.View;
+import com.exia.puydufou.R;
 
 public class LayoutHelper
 {
@@ -74,7 +76,6 @@ public class LayoutHelper
     {
         return _referencedActivity.getMenuInflater();
     }
-
 
 //    Use "setContentView(GetView)" in the parent if ApplyModifications doesn't work
 //    public View GetView()

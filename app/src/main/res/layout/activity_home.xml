@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-
 
 
     <Button android:id="@+id/menu_planning"
@@ -12,34 +12,34 @@
             android:layout_height="wrap_content"
             android:text="@string/menu_planning"
             android:textSize="@dimen/menu_text_size"
-            android:gravity="left|center_vertical"/>
+            android:gravity="start|center_vertical"/>
 
-    <Button android:id="@+id/menu_spectacle"
+    <Button android:id="@+id/menu_show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menu_spectacle"
+            android:text="@string/menu_show"
             android:textSize="@dimen/menu_text_size"
-            android:gravity="left|center_vertical"/>
+            android:gravity="start|center_vertical"/>
 
     <Button android:id="@+id/menu_restaurant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/menu_restaurant"
             android:textSize="@dimen/menu_text_size"
-            android:gravity="left|center_vertical"/>
+            android:gravity="start|center_vertical"/>
 
-    <Button android:id="@+id/menu_boutique"
+    <Button android:id="@+id/menu_shop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/menu_boutique"
+            android:text="@string/menu_shop"
             android:textSize="@dimen/menu_text_size"
-            android:gravity="left|center_vertical"/>
+            android:gravity="start|center_vertical"/>
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_margin="@dimen/activity_horizontal_margin"
               android:gravity="center"
-              android:textSize="20dp"
+              android:textSize="@dimen/menu_text_size"
               android:text="@string/app_description"/>
 
 

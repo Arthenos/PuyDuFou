@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">"Puy du Fou"</string>
+    <string name="app_description">"L'application Puy du Fou vous permet de connaître l'ensemble des représentations et vous guider durant votre visite !"</string>
+
+
     <string name="title_activity_home">" - Acceuil"</string>
     <string name="title_activity_planning">"Planning"</string>
-    <string name="title_activity_shows">"Spectacles"</string>
+    <string name="title_activity_show">"Spectacles"</string>
 
 
     <string name="menu_planning">"> Votre planning"</string>
-    <string name="menu_spectacle">"> Spectacles du jour"</string>
+    <string name="menu_show">"> Spectacles du jour"</string>
     <string name="menu_restaurant">"> Restaurants du parc"</string>
-    <string name="menu_boutique">"> Boutiques du parc"</string>
+    <string name="menu_shop">"> Boutiques du parc"</string>
 
 
     <string name="action_help">"Aide"</string>
@@ -17,8 +20,13 @@
     <string name="action_plan">"Planifier"</string>
 
 
-    <string name="app_description">"L'application Puy du Fou vous permet de connaître l'ensemble des représentations et vous guider durant votre visite !"</string>
-    <string name="title_activity_show">Spectacles</string>
-
+    <string name="text_description">"<u>Description :</u> "</string>
+    <string name="text_rateit">"Votez !"</string>
+    <string name="text_addit">"Ajoutez !"</string>
+    <string name="text_location">"<u>Emplacement :</u> "</string>
+    <string name="text_actors">"<u>Artistes :</u> "</string>
+    <string name="text_creationdate">"<u>Date de parution :</u> "</string>
+    <string name="text_duration">"<u>Durée :</u> "</string>
+    <string name="text_min_unit">" min"</string>
 
 </resources>
