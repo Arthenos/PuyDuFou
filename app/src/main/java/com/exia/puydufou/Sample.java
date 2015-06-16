@@ -25,7 +25,7 @@ public class Sample extends AppCompatActivity
         _layoutHelper = new LayoutHelper(this, R.layout.activity_sample);
 
 
-        Float t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
+        Integer t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
 
         if (t == null)
         {
