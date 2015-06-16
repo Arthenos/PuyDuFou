@@ -9,8 +9,10 @@ import android.widget.Toast;
 import com.exia.puydufou.Helper.LayoutHelper;
 import com.exia.puydufou.Messenger.MessageQueue;
 
+import java.lang.Object;
 
-public class Planning extends AppCompatActivity
+
+public class Sample extends AppCompatActivity
 {
     private LayoutHelper _layoutHelper = null;
 
@@ -19,11 +21,13 @@ public class Planning extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
 
-        _layoutHelper = new LayoutHelper(this, R.layout.activity_planning);
+        _layoutHelper = new LayoutHelper(this, R.layout.activity_sample);
+
+        _layoutHelper.ActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        Integer t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
-
+        Float t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
+        // coucou float 2
         if (t == null)
         {
             Toast.makeText(this, "Not retrieving data !", Toast.LENGTH_SHORT).show();
@@ -43,7 +47,7 @@ public class Planning extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_planning, menu);
+        getMenuInflater().inflate(R.menu.menu_sample, menu);
         return true;
     }
 
@@ -56,7 +60,7 @@ public class Planning extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_add)
+        if (id == R.id.action_settings)
         {
             return true;
         }
