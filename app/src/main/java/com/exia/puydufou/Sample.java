@@ -10,6 +10,8 @@ import android.widget.Toast;
 import com.exia.puydufou.Helper.LayoutHelper;
 import com.exia.puydufou.Messenger.MessageQueue;
 
+import java.lang.Object;
+
 
 public class Sample extends AppCompatActivity
 {
@@ -23,7 +25,7 @@ public class Sample extends AppCompatActivity
         _layoutHelper = new LayoutHelper(this, R.layout.activity_sample);
 
 
-        Integer t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
+        Float t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
 
         if (t == null)
         {
