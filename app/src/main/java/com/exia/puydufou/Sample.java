@@ -9,6 +9,8 @@ import android.widget.Toast;
 import com.exia.puydufou.Helper.LayoutHelper;
 import com.exia.puydufou.Messenger.MessageQueue;
 
+import java.lang.Object;
+
 
 public class Sample extends AppCompatActivity
 {
@@ -24,7 +26,7 @@ public class Sample extends AppCompatActivity
         _layoutHelper.ActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        Integer t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
+        Object t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
 
         if (t == null)
         {
