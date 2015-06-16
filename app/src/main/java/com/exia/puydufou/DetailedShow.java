@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -68,6 +69,8 @@ public class DetailedShow extends android.support.v4.app.Fragment
             mParam1 = getArguments().getString(ARG_PARAM1);
 //            mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        setHasOptionsMenu(true);
     }
 
     @Override
@@ -80,6 +83,8 @@ public class DetailedShow extends android.support.v4.app.Fragment
         View v = inflater.inflate(R.layout.fragment_detailed_show, container, false);
         ((TextView)v.findViewById(R.id.fragment_test)).setText(mParam1);
 
+
+        setHasOptionsMenu(true);
         return v;
     }
 
