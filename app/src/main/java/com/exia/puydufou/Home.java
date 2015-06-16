@@ -8,30 +8,30 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import com.exia.puydufou.Helper.LayoutHelper;
-import com.exia.puydufou.Messenger.MessageQueue;
 
 
 public class Home extends AppCompatActivity
 {
     private LayoutHelper _layoutHelper = null;
 
-    private View.OnClickListener ButtonClick = new View.OnClickListener()
+    private View.OnClickListener PlanningMenuClick = new View.OnClickListener()
     {
         @Override
         public void onClick(View v)
         {
-//            if(_view == null)
-//                throw new NullPointerException("_view is undefined");
+            Intent i = new Intent(Home.this, Planning.class);
+            startActivity(i);
 
-//            ((TextView)_view.findViewById(R.id.TestText)).setText("Changement -> !");
+        }
+    };
 
-            _layoutHelper.<TextView>GetElement(R.id.TestText).setText("Changement -> !");
-
-            MessageQueue.Instance().AddMessage(3);
-
-            Intent i = new Intent(Home.this, Sample.class);
+    private View.OnClickListener ShowsMenuClick = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+            Intent i = new Intent(Home.this, Show.class);
             startActivity(i);
 
         }
@@ -48,8 +48,9 @@ public class Home extends AppCompatActivity
 
         _layoutHelper = new LayoutHelper(this, R.layout.activity_home);
         //Android match le nom de la première activité avec le nom de l'application
-        _layoutHelper.ConcatTitle(R.string.AddHomeTitle);
-        _layoutHelper.<Button>GetElement(R.id.Button).setOnClickListener(ButtonClick);
+        _layoutHelper.ConcatTitle(R.string.title_activity_home);
+        _layoutHelper.<Button>GetElement(R.id.menu_planning).setOnClickListener(PlanningMenuClick);
+        _layoutHelper.<Button>GetElement(R.id.menu_spectacle).setOnClickListener(ShowsMenuClick);
 
         _layoutHelper.ApplyModifications();
 
@@ -70,7 +71,7 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_help) {
             return true;
         }
 

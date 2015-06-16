@@ -5,15 +5,42 @@
               android:layout_height="fill_parent"
         >
 
-    <TextView android:id="@+id/TestText"
-              android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-              android:text="@string/HelloWorld" />
 
-    <Button android:id="@+id/Button"
+
+    <Button android:id="@+id/menu_planning"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/TextButton"/>
+            android:text="@string/menu_planning"
+            android:textSize="@dimen/menu_text_size"
+            android:gravity="left|center_vertical"/>
+
+    <Button android:id="@+id/menu_spectacle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_spectacle"
+            android:textSize="@dimen/menu_text_size"
+            android:gravity="left|center_vertical"/>
+
+    <Button android:id="@+id/menu_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_restaurant"
+            android:textSize="@dimen/menu_text_size"
+            android:gravity="left|center_vertical"/>
+
+    <Button android:id="@+id/menu_boutique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_boutique"
+            android:textSize="@dimen/menu_text_size"
+            android:gravity="left|center_vertical"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/activity_horizontal_margin"
+              android:gravity="center"
+              android:textSize="20dp"
+              android:text="@string/app_description"/>
 
 
 </LinearLayout>

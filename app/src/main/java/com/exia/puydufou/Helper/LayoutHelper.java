@@ -4,6 +4,7 @@ package com.exia.puydufou.Helper;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
+import android.support.v4.app.FragmentManager;
 import android.view.MenuInflater;
 import android.view.View;
 
@@ -73,6 +74,7 @@ public class LayoutHelper
     {
         return _referencedActivity.getMenuInflater();
     }
+
 
 //    Use "setContentView(GetView)" in the parent if ApplyModifications doesn't work
 //    public View GetView()

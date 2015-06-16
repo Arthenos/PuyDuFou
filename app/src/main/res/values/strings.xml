@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">"Puy du Fou"</string>
-    <string name="AddHomeTitle">" - Acceuil"</string>
-    <string name="TextButton">"Changer la TextView du dessus"</string>
-    <string name="HelloWorld">"Hello World, Home !!!"</string>
-    <string name="SecondActivity">"Second activity test"</string>
-    <string name="title_activity_sample">Détails</string>
+    <string name="title_activity_home">" - Acceuil"</string>
+    <string name="title_activity_planning">"Planning"</string>
+    <string name="title_activity_shows">"Spectacles"</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="menu_planning">"> Votre planning"</string>
+    <string name="menu_spectacle">"> Spectacles du jour"</string>
+    <string name="menu_restaurant">"> Restaurants du parc"</string>
+    <string name="menu_boutique">"> Boutiques du parc"</string>
+
+
+    <string name="action_help">"Aide"</string>
+    <string name="action_add">"Ajouter"</string>
+    <string name="action_plan">"Planifier"</string>
+
+
+    <string name="app_description">"L'application Puy du Fou vous permet de connaître l'ensemble des représentations et vous guider durant votre visite !"</string>
+    <string name="title_activity_show">Spectacles</string>
+
+
 </resources>

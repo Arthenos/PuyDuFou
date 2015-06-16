@@ -1,6 +1,5 @@
 package com.exia.puydufou;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -10,10 +9,8 @@ import android.widget.Toast;
 import com.exia.puydufou.Helper.LayoutHelper;
 import com.exia.puydufou.Messenger.MessageQueue;
 
-import java.lang.Object;
 
-
-public class Sample extends AppCompatActivity
+public class Planning extends AppCompatActivity
 {
     private LayoutHelper _layoutHelper = null;
 
@@ -22,7 +19,7 @@ public class Sample extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
 
-        _layoutHelper = new LayoutHelper(this, R.layout.activity_sample);
+        _layoutHelper = new LayoutHelper(this, R.layout.activity_planning);
 
 
         Integer t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
@@ -46,7 +43,7 @@ public class Sample extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_sample, menu);
+        getMenuInflater().inflate(R.menu.menu_planning, menu);
         return true;
     }
 
@@ -59,7 +56,7 @@ public class Sample extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings)
+        if (id == R.id.action_add)
         {
             return true;
         }
