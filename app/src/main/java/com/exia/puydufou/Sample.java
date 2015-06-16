@@ -1,5 +1,6 @@
 package com.exia.puydufou;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -20,8 +21,6 @@ public class Sample extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         _layoutHelper = new LayoutHelper(this, R.layout.activity_sample);
-
-        _layoutHelper.ActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         Integer t = MessageQueue.Instance().RetrievingLastMessage(Integer.class);
