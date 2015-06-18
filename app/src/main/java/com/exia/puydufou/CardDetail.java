@@ -19,17 +19,7 @@ import com.exia.puydufou.BusinessObject.*;
 import com.exia.puydufou.Helper.LayoutHelper;
 import com.exia.puydufou.Helper.ViewEnum;
 import com.exia.puydufou.Messenger.MessageQueue;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.share.Sharer;
-import com.facebook.share.model.ShareLinkContent;
-import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.SharePhotoContent;
-import com.facebook.share.widget.ShareDialog;
-import io.fabric.sdk.android.Fabric;
-import com.twitter.sdk.android.tweetcomposer.TweetComposer;
+
 
 
 import java.io.File;
@@ -44,21 +34,16 @@ public class CardDetail extends FragmentActivity
     private ViewPagerAdapter pagerAdapter = null;
 
 
-    CallbackManager callbackManager;
-    ShareDialog shareDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new TweetComposer());
-        FacebookSdk.sdkInitialize(getApplicationContext());
+
         ViewEnum typeView = MessageQueue.Instance().RetrievingLastMessage(ViewEnum.class);
 
         List<Fragment> fragments = null;
         _layoutHelper = new LayoutHelper(this, R.layout.activity_show);
-        callbackManager = CallbackManager.Factory.create();
-        shareDialog = new ShareDialog(this);
-        // this part is optional
+
         switch (typeView)
         {
             case Show:
@@ -93,24 +78,7 @@ public class CardDetail extends FragmentActivity
         _layoutHelper.ApplyModifications();
     }
 
-    public void ShareMeOnFacebook(View view) {
-     /*   if (ShareDialog.canShow(ShareLinkContent.class)) {
-            ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                    .setContentTitle("Posté en direct du Puy Du Fou !")
-                    .setContentDescription(
-                            "Vous aussi venez découvrir l'univers sensationnel du Puy Du Fou")
-                    .setContentUrl(Uri.parse("http://puydufou.com/fr/"))
-                    .build();
 
-            shareDialog.show(linkContent);
-        }*/
-
-        TweetComposer.Builder builder = new TweetComposer.Builder(this)
-                .text("Le puy du fou, y'a pas plus fou !");
-
-
-        builder.show();
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -153,9 +121,6 @@ public class CardDetail extends FragmentActivity
         return fList;
 
     }
-    @Override
-    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
-    }
+
+
 }

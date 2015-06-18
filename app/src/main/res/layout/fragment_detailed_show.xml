@@ -94,6 +94,18 @@
                     android:textSize="@dimen/description_text_size"
                     android:text="@string/text_rateit"
                     />
+
+            <Button android:id="@+id/show_shareme_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_shareme_facebook"
+                android:onClick="ShareMeOnFacebook"/>
+
+            <Button android:id="@+id/show_shareme_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_shareme_twitter"
+                android:onClick="ShareMeOnTwitter"/>
         </LinearLayout>
     </LinearLayout>
 
