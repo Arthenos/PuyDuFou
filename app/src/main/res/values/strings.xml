@@ -8,7 +8,7 @@
     <string name="title_activity_planning">"Planning"</string>
     <string name="title_activity_show">"Spectacles"</string>
 
-
+    <string name="facebook_app_id">894155047310830</string>
     <string name="menu_planning">"> Votre planning"</string>
     <string name="menu_show">"> Spectacles du jour"</string>
     <string name="menu_restaurant">"> Restaurants du parc"</string>
@@ -19,7 +19,8 @@
     <string name="action_add">"Ajouter"</string>
     <string name="action_plan">"Planifier"</string>
 
-
+    <string name="text_shareme_facebook"> Partagez moi sur Facebook ! </string>
+    <string name="text_shareme_twitter"> Partagez moi sur Twitter ! </string>
     <string name="text_description">"<u>Description :</u> "</string>
     <string name="text_rateit">"Votez !"</string>
     <string name="text_addit">"Ajoutez !"</string>

@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.exia.puydufou.Helper.LayoutHelper;
 import com.exia.puydufou.Helper.ViewEnum;
 import com.exia.puydufou.Messenger.MessageQueue;
-
+import com.facebook.FacebookSdk;
 
 public class Home extends AppCompatActivity
 {
@@ -74,7 +74,7 @@ public class Home extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        FacebookSdk.sdkInitialize(getApplicationContext());
 //        _view = getLayoutInflater().inflate(R.layout.home, null);
 //        ((Button)_view.findViewById(R.id.Button)).setOnClickListener(ButtonClick);
 //        setContentView(_view);
